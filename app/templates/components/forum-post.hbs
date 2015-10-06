@@ -1,0 +1,9 @@
+<div class="panel panel-default">
+	  <div class="panel-heading">
+	  	<button class="btn btn-primary" {{action 'upvote'}}>
+	  		<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>{{post.upvotes}}
+	  	</button>{{#link-to 'forum.forumpost' post.id}}{{post.title}}{{/link-to}} ({{post.author}})</div>
+	    <div class="panel-body">
+	      {{post.content}}
+	    </div>
+	</div>
